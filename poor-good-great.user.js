@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         一键打分
-// @version      0.21
+// @version      0.3
 // @description  审po一键打分。仅用于娱乐用途，审po时请务必遵照审po规范进行打分。 fork https://github.com/jqqqqqqqqqq/5StarOneKey
 // @source       https://github.com/shizhao/5StarOneKey
 // @updateURL    https://raw.githubusercontent.com/shizhao/5StarOneKey/master/poor-good-great.user.js
@@ -35,12 +35,12 @@
     good.appendChild(textnode);
     target1.appendChild(good);
     good.onclick = function(){
-        document.querySelector("#AnswersController > form > div:nth-child(1) > div:nth-child(1) > div.btn-group > button:nth-child(Math.floor(Math.random()*5+1))").click();
-        document.querySelector("#AnswersController > form > div:nth-child(1) > div.col-xs-12.col-sm-4.pull-right.text-center > div:nth-child(5) > button:nth-child(Math.floor(Math.random()*5+1))").click();
-        document.querySelector("#AnswersController > form > div:nth-child(1) > div.col-xs-12.col-sm-4.pull-right.text-center > div:nth-child(10) > button:nth-child(Math.floor(Math.random()*5+1))").click();
-        document.querySelector("#AnswersController > form > div:nth-child(1) > div.col-xs-12.col-sm-4.pull-right.text-center > div:nth-child(15) > button:nth-child(Math.floor(Math.random()*5+1))").click();
-        document.querySelector("#AnswersController > form > div:nth-child(2) > div:nth-child(1) > div:nth-child(5) > button:nth-child(Math.floor(Math.random()*5+1))").click();
-        document.querySelector("#AnswersController > form > div:nth-child(2) > div:nth-child(1) > div:nth-child(10) > button:nth-child(Math.floor(Math.random()*5+1))").click();
+        document.querySelector("#AnswersController > form > div:nth-child(1) > div:nth-child(1) > div.btn-group > button:nth-child("+Math.floor(Math.random()*5+1)+")").click();
+        document.querySelector("#AnswersController > form > div:nth-child(1) > div.col-xs-12.col-sm-4.pull-right.text-center > div:nth-child(5) > button:nth-child("+Math.floor(Math.random()*5+1)+")").click();
+        document.querySelector("#AnswersController > form > div:nth-child(1) > div.col-xs-12.col-sm-4.pull-right.text-center > div:nth-child(10) > button:nth-child("+Math.floor(Math.random()*5+1)+")").click();
+        document.querySelector("#AnswersController > form > div:nth-child(1) > div.col-xs-12.col-sm-4.pull-right.text-center > div:nth-child(15) > button:nth-child("+Math.floor(Math.random()*5+1)+")").click();
+        document.querySelector("#AnswersController > form > div:nth-child(2) > div:nth-child(1) > div:nth-child(5) > button:nth-child("+Math.floor(Math.random()*5+1)+")").click();
+        document.querySelector("#AnswersController > form > div:nth-child(2) > div:nth-child(1) > div:nth-child(10) > button:nth-child("+Math.floor(Math.random()*5+1)+")").click();
     };
     
     var great = document.createElement("button");
@@ -48,7 +48,7 @@
     great.className = "button big-submit-button";
     great.appendChild(textnode);
     target1.appendChild(great);
-    great.onclick = function(){
+    _553355.onclick = function(){
         document.querySelector("#AnswersController > form > div:nth-child(1) > div:nth-child(1) > div.btn-group > button:nth-child(1)").click();
         document.querySelector("#AnswersController > form > div:nth-child(1) > div.col-xs-12.col-sm-4.pull-right.text-center > div:nth-child(5) > button:nth-child(1)").click();
         document.querySelector("#AnswersController > form > div:nth-child(1) > div.col-xs-12.col-sm-4.pull-right.text-center > div:nth-child(10) > button:nth-child(1)").click();
