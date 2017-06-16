@@ -48,7 +48,7 @@
     great.className = "button big-submit-button";
     great.appendChild(textnode);
     target1.appendChild(great);
-    _553355.onclick = function(){
+    great.onclick = function(){
         document.querySelector("#AnswersController > form > div:nth-child(1) > div:nth-child(1) > div.btn-group > button:nth-child(1)").click();
         document.querySelector("#AnswersController > form > div:nth-child(1) > div.col-xs-12.col-sm-4.pull-right.text-center > div:nth-child(5) > button:nth-child(1)").click();
         document.querySelector("#AnswersController > form > div:nth-child(1) > div.col-xs-12.col-sm-4.pull-right.text-center > div:nth-child(10) > button:nth-child(1)").click();
