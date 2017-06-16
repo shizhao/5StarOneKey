@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         一键穷好大
-// @version      0.5
+// @version      0.6
 // @description  想变穷，多点“穷”；想变大，多点“大”；爱咋咋地，请点“好”！(仅用于娱乐用途，审po时请务必遵照审po规范进行打分。) fork https://github.com/jqqqqqqqqqq/5StarOneKey
 // @source       https://github.com/shizhao/5StarOneKey
 // @updateURL    https://raw.githubusercontent.com/shizhao/5StarOneKey/master/poor-good-great.user.js
