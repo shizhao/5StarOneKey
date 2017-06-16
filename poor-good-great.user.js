@@ -2,8 +2,8 @@
 // @name         poor, good, great One Key
 // @version      0.1
 // @description  Give 1-5 star with single click. fork https://github.com/jqqqqqqqqqq/5StarOneKey
-// @updateURL    https://raw.githubusercontent.com/shizhao/5StarOneKey/master/poor-good-great.js
-// @downloadURL  https://raw.githubusercontent.com/shizhao/5StarOneKey/master/poor-good-great.js
+// @updateURL    https://raw.githubusercontent.com/shizhao/5StarOneKey/master/poor-good-great.user.js
+// @downloadURL  https://raw.githubusercontent.com/shizhao/5StarOneKey/master/poor-good-great.user.js
 // @author       jqqqqqqqqqq, shizhao
 // @match        https://opr.ingress.com/recon
 // @grant        none
