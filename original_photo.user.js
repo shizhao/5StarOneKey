@@ -2,9 +2,9 @@
 // @name         show original photo
 // @version      0.1
 // @description  点击图片，显示原始照片，配合Exif viewer使用: https://chrome.google.com/webstore/detail/exif-viewer/nafpfdcmppffipmhcpkbplhkoiekndck
-// @source      
-// @updateURL   
-// @downloadURL  
+// @source       https://github.com/shizhao/5StarOneKey/blob/master/original_photo.user.js
+// @updateURL    https://raw.githubusercontent.com/shizhao/5StarOneKey/master/original_photo.user.js
+// @downloadURL  https://raw.githubusercontent.com/shizhao/5StarOneKey/master/original_photo.user.js
 // @author       shizhao
 // @match        https://opr.ingress.com/recon
 // @grant        none
