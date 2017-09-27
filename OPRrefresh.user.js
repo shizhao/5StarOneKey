@@ -6,8 +6,8 @@
 // @author       shizhao
 // @require      https://code.jquery.com/jquery-2.1.4.min.js
 // @source       https://github.com/shizhao/5StarOneKey
-// @updateURL    https://raw.githubusercontent.com/shizhao/5StarOneKey/master/poor-good-great.user.js
-// @downloadURL  https://raw.githubusercontent.com/shizhao/5StarOneKey/master/poor-good-great.user.js
+// @updateURL    https://github.com/shizhao/5StarOneKey/raw/master/OPRrefresh.user.js
+// @downloadURL  https://github.com/shizhao/5StarOneKey/raw/master/OPRrefresh.user.js
 // @match        https://opr.ingress.com/*
 // @grant        none
 // ==/UserScript==
