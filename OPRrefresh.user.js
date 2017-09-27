@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         OPR刷新
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  自动刷新，直到有新po出现
 // @author       shizhao
 // @require      https://code.jquery.com/jquery-2.1.4.min.js
@@ -22,6 +22,8 @@ async function opr() {
         //console.log("/",rd);
         //await sleep(rd);
             location.href="/";
+        }else{
+            document.title = '(新！)' + document.title;
         }
     }
     if(document.querySelector("p > a > button.button")){
