@@ -12,13 +12,13 @@
 // @grant        none
 // ==/UserScript==
 async function opr() {
-    if(document.querySelector("div.row > div.alert-danger > p.ng-binding")){
-       if(document.querySelector("div.row > div.alert-danger > p.ng-binding").innerText.replace(/\s+/g,"").length !== 0){
+    if(document.querySelector("div.row > div.alert-danger.ng-hide > p.ng-binding")){
+       //if(document.querySelector("div.row > div.alert-danger.ng-hide > p.ng-binding").innerText.replace(/\s+/g,"").length !== 0){
         rd = rnd(1,10);
         console.log("/",rd);
         await sleep(rd);
         location.href="/";
-        }
+       // }
     }
     if(document.querySelector("p > a > button.button")){
         rd=rnd(10,30);
@@ -35,6 +35,4 @@ function sleep(ms) {
 function rnd(start, end){
     return Math.floor((Math.random() * (end - start) + start) * 1000);
 }
- $(document).load(function() {
-            opr();
-        });
+onload=opr();
