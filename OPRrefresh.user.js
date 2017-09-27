@@ -35,6 +35,6 @@ function sleep(ms) {
 function rnd(start, end){
     return Math.floor((Math.random() * (end - start) + start) * 1000);
 }
- $(document).ready(function() {
+ $(document).load(function() {
             opr();
         });
