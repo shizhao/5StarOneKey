@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         OPR刷新
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  自动刷新，直到有新po出现
 // @author       shizhao
 // @require      https://code.jquery.com/jquery-2.1.4.min.js
@@ -35,6 +35,6 @@ function sleep(ms) {
 function rnd(start, end){
     return Math.floor((Math.random() * (end - start) + start) * 1000);
 }
- $(window).load(function() {
+ $(document).ready(function() {
             opr();
         });
