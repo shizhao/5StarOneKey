@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         OPR刷新
 // @namespace    http://tampermonkey.net/
-// @version      0.8
+// @version      0.9
 // @description  自动刷新，直到有新po出现
 // @author       shizhao
 // @require      https://code.jquery.com/jquery-2.1.4.min.js
@@ -17,14 +17,14 @@ async function opr() {
         await sleep(10000);
        if(document.querySelector("div.row > div.alert-danger > p.ng-binding").innerText.replace(/\s+/g,"").length !== 0){
         rd = rnd(1,10);
-        //console.log("/",rd);
+        console.log("/",rd);
         await sleep(rd);
         location.href="/";
         }
     }
     if(document.querySelector("p > a > button.button")){
         rd=rnd(60,600);
-        //console.log("/recon",rd);
+        console.log("/recon",rd);
         await sleep(rd);
         location.href="/recon";
     }
