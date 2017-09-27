@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         OPR刷新
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  自动刷新，直到有新po出现
 // @author       shizhao
 // @require      https://code.jquery.com/jquery-2.1.4.min.js
