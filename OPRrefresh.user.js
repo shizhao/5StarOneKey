@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         OPR刷新
 // @namespace    http://tampermonkey.net/
-// @version      1.2
-// @description  自动刷新，直到有新po出现
+// @version      1.4
+// @description  自动刷新抢审po。（如果没po会跳到首页，过几分钟再自动进入审po页。如果有新po出现，会在标签页标题最前面出现一个“新”字）
 // @author       shizhao
 // @require      https://code.jquery.com/jquery-2.1.4.min.js
 // @source       https://github.com/shizhao/5StarOneKey
