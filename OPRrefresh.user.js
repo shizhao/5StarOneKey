@@ -1,10 +1,9 @@
 // ==UserScript==
 // @name         OPR刷新
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  自动刷新，直到有新po出现
 // @author       shizhao
-// @require      https://code.jquery.com/jquery-2.1.4.min.js
 // @source       https://github.com/shizhao/5StarOneKey
 // @updateURL    https://github.com/shizhao/5StarOneKey/raw/master/OPRrefresh.user.js
 // @downloadURL  https://github.com/shizhao/5StarOneKey/raw/master/OPRrefresh.user.js
@@ -12,13 +11,14 @@
 // @grant        none
 // ==/UserScript==
 async function opr() {
-    if(document.querySelector("div.row > div.alert-danger.ng-hide > p.ng-binding")){
-       //if(document.querySelector("div.row > div.alert-danger.ng-hide > p.ng-binding").innerText.replace(/\s+/g,"").length !== 0){
+    if(document.querySelector("div.row > div.alert-danger.ng-hide > p.ng-binding") && location.href == "https://opr.ingress.com/recon"){
+        await sleep(5000);
+       if(document.querySelector("div.row > div.alert-danger.ng-hide > p.ng-binding").innerText.replace(/\s+/g,"").length !== 0){
         rd = rnd(1,10);
         console.log("/",rd);
         await sleep(rd);
         location.href="/";
-       // }
+        }
     }
     if(document.querySelector("p > a > button.button")){
         rd=rnd(10,30);
